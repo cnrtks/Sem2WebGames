@@ -1,0 +1,39 @@
+
+
+.ring {
+    background-color: rgba(255,200,0,0.5);
+    border-radius: 8px;
+    width: 80%;
+    margin: 5% auto 5% auto;
+    padding: 10%;
+}
+
+.player1Hand, .player2Hand {
+    position: relative;
+    top: -80px;
+}
+
+.player1Hand {
+    left: 5%;
+    float: left;
+}
+
+.player2Hand {
+    right: 5%;
+    float: right;
+}
+
+.options {
+    margin: 5% auto 5% auto;
+    width: 50%;
+}
+
+.handSelector{
+    position: relative;
+    float: left;
+}
+
+.handButton {
+    position: relative;
+    float: right;
+}

@@ -1,0 +1,9 @@
+
+.gameBoard img{
+    height: 120px;
+    width: 90px;
+}
+
+.gameBoard table, tr, td{
+    border: none;
+}

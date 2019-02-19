@@ -1,0 +1,69 @@
+/* 
+    Created on : Feb 16, 2019, 2:09:30 PM
+    Author     : Conor Tompkins
+*/
+
+html {
+    background-color: #333;
+    background-image: url(gamesBG1.png);
+    background-position: initial;
+    background-repeat: repeat;
+    font-family: georgia;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button{
+    font-size: 32px;
+    background-color: #6a6;
+    color: white;
+    border-radius: 8px;
+}
+
+select {
+    background-color: #8c8;
+    border: 5px #000 none;
+    color: #fff;
+    font-size: 32px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.bannerMenu {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    background-color: #8c8;
+    font-size: 32px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.gameBoard table{
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 320px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.gameBoard tr, td{
+    border: 5px solid black;  
+}
+
+.reset {
+    margin: auto;
+    width: 100px;
+}
+

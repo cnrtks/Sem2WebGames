@@ -1,0 +1,27 @@
+
+
+.gameBoard {
+    margin: 10% auto 10% auto;
+    width: 30%;
+    background-color: rgba(0,255,200,0.5);
+    padding: 80px;
+    border-radius: 8px;
+}
+
+.leftDie, .rightDie {
+    position: relative;
+    top: -50px;
+}
+
+.leftDie {
+    float: left;
+}
+
+.rightDie {
+    float: right;
+}
+
+.roll {
+    position: fixed;
+    bottom: 10%;
+}
