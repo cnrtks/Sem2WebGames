@@ -1,9 +1,11 @@
+//craps
+
 
 function roll() {
-    return diceNum = Math.floor(Math.random() * 6) + 1;
+    return diceNum = Math.ceil(Math.random() * 6);
 }
 
-function imageSwitch() {
+function diceImageSwitch() {
     var picture;
     switch (roll()) {
         case 1:
@@ -32,9 +34,10 @@ function imageSwitch() {
 }
 
 function changeDieFace() {
-    console.log("yolo");
-    document.getElementById("leftDiePic").setAttribute("src", imageSwitch());
-    document.getElementById("rightDiePic").setAttribute("src", imageSwitch());
+    document.getElementById("leftDiePic").setAttribute("src", diceImageSwitch());
+    document.getElementById("rightDiePic").setAttribute("src", diceImageSwitch());
 }
 
 document.getElementById("rollButton").addEventListener("click", changeDieFace);
+
+

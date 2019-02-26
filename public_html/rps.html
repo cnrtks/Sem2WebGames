@@ -31,25 +31,26 @@ and open the template in the editor.
         
         <div class ="ring">
             <div class ="player1Hand">
-                <img src="rockLeft.png" alt="Left Hand Rock">
-                <figcaption>0</figcaption>
+                <img id="player1Pic" src="rockLeft.png" alt="Left Hand Rock">
+                <figcaption id="player1Score">0</figcaption>
             </div>
             <div class ="player2Hand">
-                <img src="scissorsRight.png" alt="Right Hand Scissors">
-                <figcaption>0</figcaption>
+                <img id="player2Pic" src="scissorsRight.png" alt="Right Hand Scissors">
+                <figcaption id="player2Score">0</figcaption>
             </div>
         </div>
         <div class="options">
-        <div class ="handSelector">
-            <select>
-                <option value="rock">Rock</option>
-                <option value="paper">Paper</option>
-                <option value ="scissors">Scissors</option>
+        <div class="handSelect">
+            <select id="handSelect">
+                <option value="1">Rock</option>
+                <option value="2">Paper</option>
+                <option value="3">Scissors</option>
             </select>
         </div>
         <div class ="handButton">
-            <button>Shoot!</button>
+            <button id="shoot">Shoot!</button>
         </div>
         </div>
+        <script src='rps.js'></script>
     </body>
 </html>

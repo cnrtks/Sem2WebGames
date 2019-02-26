@@ -10,7 +10,7 @@
 
 .noose {
     background-color: #000;
-    color: #fff;
+    color: #000;
     border-radius: 8px;
     font-size: 64px;
     text-align: center;
@@ -19,4 +19,5 @@
     right: 5%;
     padding: 3%;
     margin-top: 5%;
+    display: inline-block;
 }
