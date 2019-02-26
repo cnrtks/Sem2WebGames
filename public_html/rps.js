@@ -47,7 +47,8 @@ function checkWinner(){
     if(userHand == npcHand){
         console.log("It's a tie")
     }
-    else if((userHand == 1 && npcHand ==3) || (userHand > 1 && userHand > npcHand)){
+    else if((userHand == 1 && npcHand ==3) || (userHand == 2 && npcHand == 1) ||
+            (userHand == 3 && npcHand == 2)){
         userScore++;
     }
     else{
