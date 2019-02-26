@@ -1,5 +1,6 @@
-//craps
-
+//@author conor tompkins
+//craps but not really
+//only dice rolling is implemented
 
 function roll() {
     return diceNum = Math.ceil(Math.random() * 6);

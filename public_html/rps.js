@@ -1,4 +1,4 @@
-
+//@author conor tompkins
 //rps
 
 document.getElementById("shoot").addEventListener("click",play);

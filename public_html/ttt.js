@@ -1,4 +1,6 @@
-
+//@author conor tompkins
+//
+//tic tac toe
 var occupied = [9];
 gameOver = false;
 
@@ -11,17 +13,17 @@ for (var i = 0; i < document.getElementsByTagName("td").length; i++) {
 }
 
 function userTurn(cell) {
-    while (gameOver == false) {
-        for (var i = 0; i < document.getElementsByTagName("td").length; i++) {
-            if (document.getElementsByTagName("td")[i] === cell) {
-                if (occupied[i] != 1 && occupied[i] != 2) {
-                    occupied[i] = 1;
-                    cell.innerText = "X";
-                    checkWin(i);
+    for (var i = 0; i < document.getElementsByTagName("td").length; i++) {
+        if (document.getElementsByTagName("td")[i] === cell) {
+            if (occupied[i] != 1 && occupied[i] != 2) {
+                occupied[i] = 1;
+                cell.innerText = "X";
+                checkWin(i);
+                if (gameOver == false) {
                     setTimeout(npcTurn, 500);
-                } else {
-                    alert("Occupied Cell");
                 }
+            } else {
+                alert("Occupied Cell");
             }
         }
     }
@@ -52,7 +54,7 @@ function checkWin(lastCell) {
         case 4:
         case 5:
             if (occupied[lastCell] === occupied[lastCell + 3] &&
-                    occupied[lastCell] === occupied[lastCell - 6]) {
+                    occupied[lastCell] === occupied[lastCell - 3]) {
                 win = true;
             }
             break;
@@ -129,5 +131,6 @@ function clearBoard() {
     for (var i = 0; i < document.getElementsByTagName("td").length; i++) {
         document.getElementsByTagName("td")[i].innerText = "";
         occupied[i] = null;
+        gameOver = false;
     }
 }
